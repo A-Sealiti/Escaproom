@@ -1,20 +1,31 @@
-.center {
-    border: 0px solid black;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
+body {
+    background-color: rgb(109, 1, 1);
 }
 
+.mainCanvas {
+    border: 5px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* gewoon de canvas gecentreerd */
+    position: absolute;
+    image-rendering: optimizeSpeed;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -moz-crisp-edges;
+    /*
+        had gehoopt dat crisp-edges me pixelart ten minste een stukje mooier maakt, maar het lijkt niet te werken (tenminste op OPERA GX en Firefox)
+    */
+}
 
-a {
-    text-decoration: none;
-    border: 0.2px solid #000;
-    color: red;
-    background: black;
-    padding: 5px;
-    border-radius: 1px;
+img {
+    display: none;
 }

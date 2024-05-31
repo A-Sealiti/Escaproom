@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>marios tunnel of doom</title>
+    <title>Geam</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-    <audio autoplay>
-        <source src="music/MARIO_'s Tunnel Of DOOM (128kbps).mp3" type="audio/mp3">
-      </audio>
-    <h1>
-        Themaweek Escape Room
-    </h1>
-    <p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </p>
-    <div class="center">
-        <div class='crazy'>
-            <a class='start' href="room1/index.html">Start</a>
-        </div>
-    </div>
-    <audio autoplay>
-        <source src="music/MARIO_'s Tunnel Of DOOM (128kbps).mp3" type="audio/mp3">
-    </audio>
+    <canvas class="mainCanvas"></canvas> <!-- die graphic canvas -->
 
+
+    <!--Hier load ik al die assets-->
+    <img class="playerSprite" src="./assets/player.png">
+    <img class="room-one-closed" src="./assets/rooms/room_one_closed.png">
+    <img class="room-two" src="./assets/rooms/room_two_broken.png">
+    <img class="room-one-open" src="./assets/rooms/room_one_open.jpg">
+    <img class="terminal" src="./assets/rooms/terminal.png">
+
+    <script type="module" src="./js/main.js"></script>
 </body>
-<script src="js/main.js"></script>
 </html>
